@@ -159,7 +159,7 @@ header img {
         grid-template-rows: repeat(6, 1fr);
     -ms-grid-columns: auto;
         grid-template-columns: auto;
-    padding: 5%;
+    padding: 10%;
     position: relative;
     width: 80%;
     bottom: 110px;
