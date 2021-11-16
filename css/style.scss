@@ -1,13 +1,4 @@
-$colors: (
-  primary: #ffadad,
-  accent: #ff9a8b,
-);
-
 $desktop: 1024px;
-
-@function color($color-name) {
-  @return map-get($map: $colors, $key: $color-name);
-}
 
 @mixin desktop {
   @media (max-width: #{$desktop}) {
@@ -79,6 +70,7 @@ header {
   @include desktop() {
     display: flexbox;
     flex-direction: column;
+    z-index: 1;
   }
 }
 
@@ -87,6 +79,7 @@ header {
   justify-content: center;
   align-items: center;
   margin: 100px;
+  margin-top: 0px;
 
   img {
     width: 100px;
@@ -126,9 +119,10 @@ header {
   @include desktop() {
     grid-template-rows: repeat(6, 1fr);
     grid-template-columns: auto;
-    padding: 0%;
+    padding: 5%;
     position: relative;
     width: 80%;
+    bottom: 110px;
   }
 }
 
@@ -141,6 +135,7 @@ header {
   @include desktop() {
     flex-direction: row;
     justify-content: space-around;
+    align-items: center;
   }
 }
 

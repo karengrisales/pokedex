@@ -92,6 +92,7 @@ header img {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    z-index: 1;
   }
 }
 
@@ -106,6 +107,7 @@ header img {
       -ms-flex-align: center;
           align-items: center;
   margin: 100px;
+  margin-top: 0px;
 }
 
 .footer__elements img {
@@ -157,9 +159,10 @@ header img {
         grid-template-rows: repeat(6, 1fr);
     -ms-grid-columns: auto;
         grid-template-columns: auto;
-    padding: 0%;
+    padding: 5%;
     position: relative;
     width: 80%;
+    bottom: 110px;
   }
 }
 
@@ -187,6 +190,9 @@ header img {
             flex-direction: row;
     -ms-flex-pack: distribute;
         justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
