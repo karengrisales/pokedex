@@ -11,6 +11,8 @@ html {
   font-family: "Mochiy Pop One", sans-serif;
   background-color: #fad961;
   background-image: linear-gradient(90deg, #fad961 0%, #f76b1c 100%);
+  max-width: 100% !important;
+  overflow-x: hidden !important;
 }
 
 header {
@@ -48,8 +50,7 @@ header {
   align-items: center;
   justify-content: center;
   margin-top: 10px;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: 40px;
   border-radius: 0.5em;
   height: 40px;
   width: 80%;
